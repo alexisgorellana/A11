@@ -171,3 +171,55 @@ main section h1{
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-bottom: 20px;}
+
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#nav_menu li {
+	float: left;
+}
+
+#nav_menu li a {
+	display: block;
+	width: 128px;
+	text-align: center;
+	padding: 1em 1em;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu ul li a.current {
+	color: yellow;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
